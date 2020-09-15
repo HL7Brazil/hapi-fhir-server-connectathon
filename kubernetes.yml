@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hapi-fhir-server-connectathon
+  labels:
+    app: hapi-fhir-server-connectathon
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hapi-fhir-server-connectathon    
+  template:
+    metadata:
+      labels:
+        app: hapi-fhir-server-connectathon
+    spec:
+      containers:
+      - name: hapi-fhir-server-connectathon
+        image: hl7brazil/hapi-fhir-server-connectathon
+        command: ["mvn jetty:run"]
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hapi-fhir-server-connectathon-service
+spec:
+  selector:
+    app: hapi-fhir-server-connectathon
+  ports:
+    - port: 8080
+      targetPort: 80
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: hapi-fhir-server-connectathon-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path:
+        backend:
+          serviceName: hapi-fhir-server-connectathon-service
+          servicePort: 8080
