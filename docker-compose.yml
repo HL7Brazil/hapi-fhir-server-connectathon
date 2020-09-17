@@ -5,4 +5,5 @@ services:
     command: mvn jetty:run
     restart: on-failure
     ports:
-      - "8081:8080"
+      - "80:80"
+      - "443:443"
