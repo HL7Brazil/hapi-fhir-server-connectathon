@@ -1,0 +1,19 @@
+[Unit]
+Description=Maven Server
+
+[Service]
+ExecStart=/usr/bin/mvn jetty:run
+# Required on some systems
+WorkingDirectory=/home/ubuntu/hapi-fhir-server-connectathon
+Restart=always
+# Restart service after 10 seconds if node service crashes
+RestartSec=10
+# Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=hapi-fhir-server-connectathon
+#User=<alternate user>
+#Group=<alternate group>
+
+[Install]
+WantedBy=multi-user.target
