@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2020-11-30T20:28:27.780+00:00",
+      "profile": [ "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>700500572752652</td></tr><tr><td>Date of birth</td><td><span>26 September 1983</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [ {
+      "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+      "value": "700500572752652"
+    } ],
+    "active": true,
+    "name": [ {
+      "use": "official",
+      "text": "Joaquim José da Silva Xavier"
+    } ],
+    "gender": "male",
+    "birthDate": "1983-09-26"
+  }
