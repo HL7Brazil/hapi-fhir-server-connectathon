@@ -1,0 +1,20 @@
+{
+    "resourceType": "Practitioner",
+    "meta": {
+      "profile": [ "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0" ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>700500572752652</td></tr><tr><td>Date of birth</td><td><span>26 September 1983</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [ {
+      "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0",
+      "value": "00394544000185"
+    } ],
+    "active": true,
+    "name": [ {
+      "use": "official",
+      "text": "JUSCELINO KUBITSCHECK DE OLIVEIRA"
+    } ],
+    "gender": "male"
+  }

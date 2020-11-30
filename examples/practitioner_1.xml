@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText" />
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>700500572752652</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>26 September 1983</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0" />
+        <value value="00394544000185" />
+    </identifier>
+    <active value="true" />
+    <name>
+        <use value="official" />
+        <text value="JUSCELINO KUBITSCHECK DE OLIVEIRA" />
+    </name>
+    <gender value="male" />
+</Practitioner>
